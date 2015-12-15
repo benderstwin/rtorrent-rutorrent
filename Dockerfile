@@ -26,7 +26,7 @@ RUN useradd -d /home/rtorrent -m -s /bin/bash rtorrent
 ADD .rtorrent.rc /home/rtorrent/
 RUN chown -R rtorrent:rtorrent /home/rtorrent
 
-# add startup script
+# add startup scripts
 ADD startup.sh /root/
 
 # configure supervisor
